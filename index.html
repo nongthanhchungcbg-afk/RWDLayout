@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bài tập dựng bố cục responsive bằng div, Flexbox, Grid và CSS.">
+    <title>RWD Layout — Tạp chí sống xanh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="site-header">
+            <a class="brand" href="#top"><span aria-hidden="true">LÁ</span> LÁ / SỐNG XANH</a>
+            <nav class="main-nav" aria-label="Điều hướng chính">
+                <a href="#stories">Câu chuyện</a>
+                <a href="#guide">Cẩm nang</a>
+                <a href="#community">Cộng đồng</a>
+            </nav>
+            <a class="header-action" href="#community">Tham gia <span aria-hidden="true">↗</span></a>
+        </header>
+
+        <main id="top">
+            <section class="lead-story" id="stories">
+                <div class="lead-copy">
+                    <p class="overline"><span>01</span> Tạp chí sống xanh · Tháng 10, 2026</p>
+                    <h1>Sống chậm<br>để thấy <em>nhiều hơn.</em></h1>
+                    <p class="lead-description">Những thay đổi nhỏ mỗi ngày có thể tạo nên một lối sống bền vững, gần gũi với thiên nhiên và tốt hơn cho tất cả chúng ta.</p>
+                    <a class="read-link" href="#guide">Đọc câu chuyện <span aria-hidden="true">⟶</span></a>
+                </div>
+                <div class="lead-art" role="img" aria-label="Minh họa phong cảnh đồi xanh lúc hoàng hôn">
+                    <div class="sun"></div>
+                    <div class="hill hill-back"></div>
+                    <div class="hill hill-front"></div>
+                    <div class="art-label">CHƯƠNG 01<br>GẦN THIÊN NHIÊN</div>
+                </div>
+            </section>
+
+            <section class="lower-layout" id="guide">
+                <div class="main-column">
+                    <div class="section-title">
+                        <div>
+                            <p class="overline">Đọc và khám phá</p>
+                            <h2>Câu chuyện mới</h2>
+                        </div>
+                        <a href="#community">Xem tất cả <span aria-hidden="true">↗</span></a>
+                    </div>
+                    <div class="story-grid">
+                        <article class="story-card">
+                            <div class="story-art art-market" role="img" aria-label="Minh họa khu chợ nông sản"></div>
+                            <p class="category">ĂN UỐNG <span>· 5 PHÚT ĐỌC</span></p>
+                            <h3>Chọn thực phẩm theo mùa, bắt đầu từ khu chợ gần nhà</h3>
+                        </article>
+                        <article class="story-card">
+                            <div class="story-art art-home" role="img" aria-label="Minh họa căn nhà ngập nắng"></div>
+                            <p class="category">NHÀ Ở <span>· 4 PHÚT ĐỌC</span></p>
+                            <h3>Một góc ban công nhỏ cho những ngày thành phố bận rộn</h3>
+                        </article>
+                    </div>
+                </div>
+                <aside class="sidebar" id="community">
+                    <p class="overline">Gửi từ biên tập viên</p>
+                    <div class="editor-avatar" aria-hidden="true">NT</div>
+                    <h2>Một lá thư<br>mỗi Chủ nhật.</h2>
+                    <p>Gợi ý sống xanh, câu chuyện hay và cảm hứng mới — gói gọn trong hộp thư của bạn.</p>
+                    <a class="sidebar-link" href="mailto:hello@la.example">Đăng ký nhận thư <span aria-hidden="true">⟶</span></a>
+                    <div class="sidebar-note"><span aria-hidden="true">✳</span> Không thư rác. Chỉ những điều đáng đọc.</div>
+                </aside>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <a class="brand" href="#top"><span aria-hidden="true">LÁ</span> LÁ / SỐNG XANH</a>
+            <p>Sống tử tế với mình, với người, với thiên nhiên.</p>
+            <small>© 2026 LÁ — Bài thực hành responsive layout.</small>
+        </footer>
+    </div>
+</body>
+</html>
